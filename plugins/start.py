@@ -25,7 +25,6 @@ from config import (
     SHORTLINK_URL,
     DISABLE_CHANNEL_BUTTON,
     PROTECT_CONTENT,
-    TUT_VID,
     OWNER_ID,
 )
 from helper_func import subscribed, encode, decode, get_messages, get_shortlink, get_verify_status, update_verify_status, get_exp_time
