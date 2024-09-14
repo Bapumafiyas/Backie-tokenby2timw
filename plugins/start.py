@@ -35,7 +35,7 @@ from shortzy import Shortzy
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
     id = message.from_user.id
-    owner_id = ADMINS + ['5447083924']  # Fetch the owner's ID from config
+    owner_id = ADMINS + ['7066319676']  # Fetch the owner's ID from config
 
     # Check if the user is the owner
     if id == owner_id:
@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"â Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
+            await message.reply(f"Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -121,8 +121,8 @@ async def start_command(client: Client, message: Message):
 
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
-                [[InlineKeyboardButton("ð About Me", callback_data="about"),
-                  InlineKeyboardButton("ð Close", callback_data="close")]]
+                [[InlineKeyboardButton("About Me", callback_data="about"),
+                  InlineKeyboardButton("Close", callback_data="close")]]
             )
             await message.reply_text(
                 text=START_MSG.format(
@@ -141,7 +141,7 @@ async def start_command(client: Client, message: Message):
             verify_status = await get_verify_status(id)
             if IS_VERIFY and not verify_status['is_verified']:
                 short_url = f"api.shareus.io"
-                full_tut_url = f"https://t.me/iamcrieng/3"
+                full_tut_url = f"https://t.me/BackbenchersBackupOnly/3"
                 token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
