@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7155863501:AAHJ3NG4uTJIp5VZy7AlPCznSW0vQNdp3pg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7215729449:AAEu1GHFF6kt1Mlk3l9TjTCN58aiXuGbA6w")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29862293"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "29862293"))
 API_HASH = os.environ.get("API_HASH", "ed2b66047d283a53433ffb4a9ef23464")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001911546743"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002332524290"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "7132799559"))
@@ -28,14 +28,14 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "7132799559"))
 PORT = os.environ.get("PORT", "1112")
 
 #Database 
-DB_URI = "mongodb+srv://Backbenchersnevakakms:<PLs5YvLbUYWRJXk8>@cluster0.u3mmn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+DB_URI = "mongodb+srv://Backbenchersnevakakms:2mgfwWVJFMafWuep@cluster0.u3mmn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "tyrano-shortener.in")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "573cf3412c46648705cfe935b79e734abaf4a206")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/BackbenchersBackupOnly/3")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/c/2240500177/8")
 
 
 #force sub channel id, if you want enable force sub
